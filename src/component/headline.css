@@ -1,0 +1,61 @@
+.container, .loader {
+    height: 100%;
+}
+
+.container .loader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.container .loader .loader-circle {
+    width:144px;
+    height:144px;
+    position: relative;
+}
+
+.container .loader .loader-circle div {
+    position: absolute;
+    border: 4px solid aqua;
+    opacity: 1;
+    border-radius: 50%;
+    animation: loader-circle 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+
+
+.container .loader .loader-circle .circle1 {
+    animation-delay: -0.5s;
+}
+
+.container .loader .loader-circle .circle2 {
+    animation-delay: -0.25s;
+}
+
+.container .loader .loader-circle .circle3 {
+    animation-delay: 0;
+}
+
+@keyframes loader-circle {
+    0% {
+        top: 72px;
+        left: 72px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+      100% {
+        top: 0px;
+        left: 0px;
+        width: 144px;
+        height: 144px;
+        opacity: 0;
+      }
+  }
+  
+
+.container .loader .loading-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}

@@ -25,4 +25,4 @@ Article.propTypes = {
     urlToImage: PropTypes.string.isRequired
 }
 
-export default Article
+export default Article;
